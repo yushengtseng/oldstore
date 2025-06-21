@@ -24,7 +24,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDto> getAllProducts() {
-    	12311456
         return productRepository.findAll()
         		.stream()
                 .map(productMapper::toDto)
