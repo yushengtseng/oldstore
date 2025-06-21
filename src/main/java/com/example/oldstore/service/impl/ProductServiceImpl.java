@@ -24,7 +24,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDto> getAllProducts() {
-    	System.out.println("hel");
+    	System.out.println("hele");
         return productRepository.findAll()
         		.stream()
                 .map(productMapper::toDto)
