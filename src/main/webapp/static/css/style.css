@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.btn-custom {
+        background-color: #e2b77e;
+        border-color: #e2b77e;
+        color: #2d1b00;
+}
+
+.btn-custom:hover {
+    background-color: #d19b60;
+    border-color: #d19b60;
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    border: 1px solid #e2b77e;
+    color: #e2b77e;
+}
+
+.btn-outline-custom:hover {
+    background-color: #e2b77e;
+    color: #2d1b00;
+}
+
+.nav-link-subtle {
+    color: #f3e6cc;
+    padding: 0.3rem 0.6rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-link-subtle:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+}
