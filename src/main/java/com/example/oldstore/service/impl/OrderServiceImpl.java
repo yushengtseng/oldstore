@@ -179,4 +179,24 @@ public class OrderServiceImpl implements OrderService{
 			orderRepository.save(order);
 		}
 	}
+	
+	@Override
+	public void markOrderAsPaid(String merchantTradeNo) {
+	    Order order = orderRepository.findByMerchantTradeNo(merchantTradeNo)
+	        .orElseThrow(() -> new RuntimeException("找不到對應訂單：" + merchantTradeNo));
+
+	    if (order.getStatus() != OrderStatus.PAID) {
+	        order.setStatus(OrderStatus.PAID);
+	        order.setPaidAt(LocalDateTime.now());
+	        orderRepository.save(order);
+	    }
+	}
+
+	@Override
+	public void saveMerchantTradeNo(Integer orderId, String merchantTradeNo) {
+	    Order order = orderRepository.findById(orderId)
+	        .orElseThrow(() -> new RuntimeException("找不到訂單"));
+	    order.setMerchantTradeNo(merchantTradeNo);
+	    orderRepository.save(order);
+	}
 }

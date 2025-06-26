@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,6 +36,9 @@ public class MemberController {
 	@Autowired
 	private UserMapper userMapper;
 	
+	@Value("${site.base.url}")
+	private String siteBaseUrl;
+
 	//顯示會員個人資料
 	@GetMapping("/info")
 	public String showMemberInfo(HttpSession session, Model model) {
@@ -88,7 +92,7 @@ public class MemberController {
 		
 		
 		// 發送驗證信
-		String verifyLink = "http://localhost:8080/member/verify-password-change?code=" + code;
+		String verifyLink = siteBaseUrl + "/member/verify-password-change?code=" + code;
 		String subject = "【老式美好舊貨店】變更密碼驗證信";
 		String content = String.format(
 				"親愛的 %s 您好:\n\n請點選以下連結完成帳號驗證:\n%s\n\n若非本人操作請忽略此信件。"

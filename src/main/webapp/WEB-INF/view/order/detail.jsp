@@ -171,7 +171,7 @@
     
     <div class="text-end mt-4">
 	    <c:if test="${order.status == 'PENDING'}">
-	        <form method="post" action="${pageContext.request.contextPath}/order/pay/${order.orderId}">
+	        <form method="get" action="${pageContext.request.contextPath}/payment/pay/${order.orderId}">
 	            <button type="submit" class="btn btn-pay w-25 mb-2">結帳</button>
 	        </form>
 	    </c:if>

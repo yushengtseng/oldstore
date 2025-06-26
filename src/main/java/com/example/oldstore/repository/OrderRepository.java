@@ -37,4 +37,6 @@ public interface OrderRepository extends JpaRepository<Order, Integer>{
 			ORDER BY o.orderDate DESC
 			""")
 	List<Order> findAllWithUser();
+	
+	Optional<Order> findByMerchantTradeNo(String merchantTradeNo);
 }

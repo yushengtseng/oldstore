@@ -50,4 +50,8 @@ public class Order {
 	
 	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<OrderItem> items;
+	
+	@Column(length = 50, unique = true)
+	private String merchantTradeNo;
+
 }

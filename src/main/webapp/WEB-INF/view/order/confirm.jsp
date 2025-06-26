@@ -85,7 +85,7 @@
 		    </strong>
 		</h5>
         <div class="text-end mt-4">
-		    <form method="post" action="${pageContext.request.contextPath}/order/pay/${order.orderId}">
+		    <form method="get" action="${pageContext.request.contextPath}/payment/pay/${order.orderId}">
 		        <button type="submit" class="btn btn-warning w-25 mb-2">結帳</button>
 		    </form>
 		    <a href="${pageContext.request.contextPath}/home" class="btn btn-custom w-25">回到首頁</a>

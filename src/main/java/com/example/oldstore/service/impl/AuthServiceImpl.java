@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.example.oldstore.exception.EmailSendException;
@@ -24,6 +25,9 @@ public class AuthServiceImpl implements AuthService{
 	
 	@Autowired
 	private MailService mailService;
+	
+	@Value("${site.base.url}")
+	private String siteBaseUrl;
 	
 	@Override
 	@Transactional
@@ -61,7 +65,7 @@ public class AuthServiceImpl implements AuthService{
 		userRepository.save(user);
 		
 		// 寄出驗證信 (若失敗以 rollback 回滾拋出例外)
-		String verifyLink = "http://localhost:8080/verify?code=" + verifyCode;
+		String verifyLink = siteBaseUrl + "/verify?code=" + verifyCode;
 		String subject = "【老式美好舊貨店】帳號驗證信";
 		String content = String.format(
 				"親愛的 %s 您好:\n\n請點選以下連結完成帳號驗證:\n%s\n\n若非本人操作請忽略此信件。"

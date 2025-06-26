@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +24,10 @@ public class ForgotPasswordController {
 	
 	@Autowired
 	private MailService mailService;
+	
+	@Value("${site.base.url}")
+	private String siteBaseUrl;
+
 	
 	// 顯示忘記密碼頁面
 	@GetMapping("/forgot-password")
@@ -45,7 +50,7 @@ public class ForgotPasswordController {
 		user.setVerificationExpiresAt(LocalDateTime.now().plusMinutes(30));
 		userRepository.save(user);
 		
-		String resetLink = "http://localhost:8080/reset-password?code=" + resetCode;
+		String resetLink = siteBaseUrl + "/reset-password?code=" + resetCode;
 		String content = String.format(
 				"親愛的 %s 您好:\n\n請點選以下連結完成帳號驗證:\n%s\n\n若非本人操作請忽略此信件。"
 				+ "\n此驗證連結有效時間為: 30 分鐘，逾期將失效。",

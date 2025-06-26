@@ -14,4 +14,6 @@ public interface OrderService {
 	void updateOrderStatus(Integer orderId, OrderStatus newStatus, boolean recordShippedTime);
 	void simulatePayment(Integer orderId);
 	void confirmReceipt(Integer orderId, Integer userId);
+	void markOrderAsPaid(String merchantTradeNo);
+	void saveMerchantTradeNo(Integer orderId, String merchantTradeNo);
 }

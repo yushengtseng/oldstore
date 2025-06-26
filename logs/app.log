@@ -1,36 +1,924 @@
-2025-06-21T00:18:29.889+08:00  INFO 4148 --- [oldstore] [RMI TCP Connection(80)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-06-21T00:18:29.896+08:00  INFO 4148 --- [oldstore] [RMI TCP Connection(80)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-21T00:18:29.900+08:00  INFO 4148 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-21T00:18:29.903+08:00  INFO 4148 --- [oldstore] [RMI TCP Connection(80)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-21T00:18:29.905+08:00  INFO 4148 --- [oldstore] [RMI TCP Connection(80)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-21T00:18:29.908+08:00  INFO 4148 --- [oldstore] [RMI TCP Connection(80)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-21T17:39:51.850+08:00  INFO 2108 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.7 with PID 2108 (C:\WorkSpace\oldstore\target\classes started by User in C:\WorkSpace\oldstore)
-2025-06-21T17:39:51.851+08:00  INFO 2108 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-06-21T17:39:52.539+08:00  INFO 2108 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-21T17:39:52.541+08:00  INFO 2108 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-06-21T17:39:52.581+08:00  INFO 2108 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T17:39:52.583+08:00  INFO 2108 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T17:39:52.585+08:00  INFO 2108 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T17:39:52.587+08:00  INFO 2108 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T17:39:52.588+08:00  INFO 2108 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T17:39:52.589+08:00  INFO 2108 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 0 JDBC repository interfaces.
-2025-06-21T17:39:52.596+08:00  INFO 2108 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-21T17:39:52.597+08:00  INFO 2108 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-21T17:39:52.628+08:00  INFO 2108 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
-2025-06-21T17:39:53.091+08:00  INFO 2108 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-21T17:39:53.138+08:00  INFO 2108 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-21T17:39:53.138+08:00  INFO 2108 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-06-21T17:39:53.298+08:00  INFO 2108 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2025-06-21T17:39:53.304+08:00  INFO 2108 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-21T17:39:53.305+08:00  INFO 2108 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1404 ms
-2025-06-21T17:39:53.439+08:00  INFO 2108 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-21T17:39:53.520+08:00  INFO 2108 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-06-21T17:39:53.559+08:00  INFO 2108 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-21T17:39:53.827+08:00  INFO 2108 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-21T17:39:53.885+08:00  INFO 2108 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-21T17:39:54.089+08:00  INFO 2108 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@92e2c93
-2025-06-21T17:39:54.090+08:00  INFO 2108 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-21T17:39:54.241+08:00  INFO 2108 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-26T09:41:49.407+08:00  INFO 8536 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 8536 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T09:41:49.411+08:00  INFO 8536 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T09:41:49.763+08:00  INFO 8536 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T09:41:49.763+08:00  INFO 8536 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T09:41:49.785+08:00  INFO 8536 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:41:49.786+08:00  INFO 8536 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:41:49.787+08:00  INFO 8536 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:41:49.787+08:00  INFO 8536 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:41:49.788+08:00  INFO 8536 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:41:49.789+08:00  INFO 8536 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T09:41:49.795+08:00  INFO 8536 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T09:41:49.796+08:00  INFO 8536 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T09:41:49.817+08:00  INFO 8536 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2025-06-26T09:41:50.081+08:00  INFO 8536 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T09:41:50.090+08:00  INFO 8536 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T09:41:50.090+08:00  INFO 8536 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T09:41:50.204+08:00  INFO 8536 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T09:41:50.208+08:00  INFO 8536 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T09:41:50.208+08:00  INFO 8536 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 773 ms
+2025-06-26T09:41:50.287+08:00  INFO 8536 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T09:41:50.319+08:00  INFO 8536 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T09:41:50.337+08:00  INFO 8536 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T09:41:50.483+08:00  INFO 8536 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T09:41:50.501+08:00  INFO 8536 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T09:41:50.589+08:00  INFO 8536 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35536760
+2025-06-26T09:41:50.590+08:00  INFO 8536 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T09:41:50.633+08:00  INFO 8536 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T09:41:51.166+08:00  INFO 8536 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T09:41:51.649+08:00  INFO 8536 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T09:41:51.806+08:00  INFO 8536 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T09:41:52.395+08:00  INFO 8536 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T09:41:52.398+08:00  INFO 8536 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 3.2 seconds (process running for 3.516)
+2025-06-26T09:43:18.091+08:00  INFO 8536 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T09:43:18.091+08:00  INFO 8536 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T09:43:18.092+08:00  INFO 8536 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T09:48:58.320+08:00  INFO 8536 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T09:48:58.322+08:00  INFO 8536 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T09:48:58.324+08:00  INFO 8536 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T09:48:58.327+08:00  INFO 8536 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T09:48:58.328+08:00  INFO 8536 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T09:48:58.331+08:00  INFO 8536 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T09:48:59.604+08:00  INFO 3292 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 3292 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T09:48:59.605+08:00  INFO 3292 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T09:48:59.949+08:00  INFO 3292 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T09:48:59.950+08:00  INFO 3292 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T09:48:59.972+08:00  INFO 3292 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:48:59.973+08:00  INFO 3292 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:48:59.974+08:00  INFO 3292 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:48:59.975+08:00  INFO 3292 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:48:59.976+08:00  INFO 3292 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:48:59.976+08:00  INFO 3292 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2025-06-26T09:48:59.982+08:00  INFO 3292 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T09:48:59.983+08:00  INFO 3292 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T09:49:00.004+08:00  INFO 3292 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T09:49:00.268+08:00  INFO 3292 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T09:49:00.276+08:00  INFO 3292 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T09:49:00.276+08:00  INFO 3292 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T09:49:00.390+08:00  INFO 3292 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T09:49:00.394+08:00  INFO 3292 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T09:49:00.394+08:00  INFO 3292 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2025-06-26T09:49:00.474+08:00  INFO 3292 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T09:49:00.508+08:00  INFO 3292 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T09:49:00.526+08:00  INFO 3292 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T09:49:00.666+08:00  INFO 3292 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T09:49:00.684+08:00  INFO 3292 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T09:49:00.771+08:00  INFO 3292 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51743cc0
+2025-06-26T09:49:00.773+08:00  INFO 3292 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T09:49:00.817+08:00  INFO 3292 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T09:49:01.356+08:00  INFO 3292 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T09:49:01.411+08:00  INFO 3292 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T09:49:01.544+08:00  INFO 3292 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T09:49:02.176+08:00  INFO 3292 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T09:49:02.180+08:00  INFO 3292 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.783 seconds (process running for 3.084)
+2025-06-26T09:49:34.926+08:00  INFO 3292 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T09:49:34.926+08:00  INFO 3292 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T09:49:34.927+08:00  INFO 3292 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T09:56:05.417+08:00  INFO 3292 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T09:56:05.419+08:00  INFO 3292 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T09:56:05.421+08:00  INFO 3292 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T09:56:05.424+08:00  INFO 3292 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T09:56:05.425+08:00  INFO 3292 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T09:56:05.428+08:00  INFO 3292 --- [oldstore] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T09:56:06.682+08:00  INFO 10364 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 10364 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T09:56:06.683+08:00  INFO 10364 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T09:56:07.026+08:00  INFO 10364 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T09:56:07.027+08:00  INFO 10364 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T09:56:07.048+08:00  INFO 10364 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:56:07.049+08:00  INFO 10364 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:56:07.050+08:00  INFO 10364 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:56:07.051+08:00  INFO 10364 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:56:07.051+08:00  INFO 10364 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T09:56:07.052+08:00  INFO 10364 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T09:56:07.058+08:00  INFO 10364 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T09:56:07.058+08:00  INFO 10364 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T09:56:07.079+08:00  INFO 10364 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T09:56:07.347+08:00  INFO 10364 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T09:56:07.355+08:00  INFO 10364 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T09:56:07.356+08:00  INFO 10364 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T09:56:07.471+08:00  INFO 10364 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T09:56:07.474+08:00  INFO 10364 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T09:56:07.474+08:00  INFO 10364 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2025-06-26T09:56:07.554+08:00  INFO 10364 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T09:56:07.585+08:00  INFO 10364 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T09:56:07.604+08:00  INFO 10364 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T09:56:07.750+08:00  INFO 10364 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T09:56:07.768+08:00  INFO 10364 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T09:56:07.854+08:00  INFO 10364 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@92e2c93
+2025-06-26T09:56:07.855+08:00  INFO 10364 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T09:56:07.898+08:00  INFO 10364 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T09:56:08.435+08:00  INFO 10364 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T09:56:08.491+08:00  INFO 10364 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T09:56:08.653+08:00  INFO 10364 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T09:56:09.255+08:00  INFO 10364 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T09:56:09.259+08:00  INFO 10364 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.789 seconds (process running for 3.09)
+2025-06-26T09:56:15.073+08:00  INFO 10364 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T09:56:15.073+08:00  INFO 10364 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T09:56:15.074+08:00  INFO 10364 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T10:00:55.717+08:00  INFO 10364 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T10:00:55.718+08:00  INFO 10364 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T10:00:55.720+08:00  INFO 10364 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T10:00:55.723+08:00  INFO 10364 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T10:00:55.724+08:00  INFO 10364 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T10:00:55.727+08:00  INFO 10364 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T10:00:56.979+08:00  INFO 2988 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 2988 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T10:00:56.980+08:00  INFO 2988 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T10:00:57.322+08:00  INFO 2988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T10:00:57.323+08:00  INFO 2988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T10:00:57.344+08:00  INFO 2988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T10:00:57.345+08:00  INFO 2988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T10:00:57.346+08:00  INFO 2988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T10:00:57.347+08:00  INFO 2988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T10:00:57.348+08:00  INFO 2988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T10:00:57.348+08:00  INFO 2988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2025-06-26T10:00:57.354+08:00  INFO 2988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T10:00:57.355+08:00  INFO 2988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T10:00:57.376+08:00  INFO 2988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T10:00:57.644+08:00  INFO 2988 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T10:00:57.653+08:00  INFO 2988 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T10:00:57.653+08:00  INFO 2988 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T10:00:57.767+08:00  INFO 2988 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T10:00:57.771+08:00  INFO 2988 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T10:00:57.771+08:00  INFO 2988 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
+2025-06-26T10:00:57.850+08:00  INFO 2988 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T10:00:57.883+08:00  INFO 2988 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T10:00:57.901+08:00  INFO 2988 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T10:00:58.047+08:00  INFO 2988 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T10:00:58.064+08:00  INFO 2988 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T10:00:58.150+08:00  INFO 2988 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a72e2e8
+2025-06-26T10:00:58.151+08:00  INFO 2988 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T10:00:58.195+08:00  INFO 2988 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T10:00:58.730+08:00  INFO 2988 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T10:00:58.783+08:00  INFO 2988 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T10:00:58.938+08:00  INFO 2988 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T10:00:59.528+08:00  INFO 2988 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T10:00:59.532+08:00  INFO 2988 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.761 seconds (process running for 3.064)
+2025-06-26T10:01:04.633+08:00  INFO 2988 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T10:01:04.633+08:00  INFO 2988 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T10:01:04.634+08:00  INFO 2988 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T11:09:43.152+08:00  INFO 1388 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 1388 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:09:43.153+08:00  INFO 1388 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:09:43.566+08:00  INFO 1388 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:09:43.567+08:00  INFO 1388 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:09:43.592+08:00  INFO 1388 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:09:43.593+08:00  INFO 1388 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:09:43.594+08:00  INFO 1388 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:09:43.594+08:00  INFO 1388 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:09:43.596+08:00  INFO 1388 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:09:43.596+08:00  INFO 1388 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:09:43.603+08:00  INFO 1388 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:09:43.604+08:00  INFO 1388 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:09:43.627+08:00  INFO 1388 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:09:43.931+08:00  INFO 1388 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:09:43.941+08:00  INFO 1388 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:09:43.941+08:00  INFO 1388 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:09:44.061+08:00  INFO 1388 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:09:44.065+08:00  INFO 1388 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:09:44.065+08:00  INFO 1388 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 887 ms
+2025-06-26T11:09:44.160+08:00  INFO 1388 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:09:44.210+08:00  INFO 1388 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:09:44.235+08:00  INFO 1388 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:09:44.413+08:00  INFO 1388 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:09:44.435+08:00  INFO 1388 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:09:44.552+08:00  INFO 1388 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ee456c7
+2025-06-26T11:09:44.553+08:00  INFO 1388 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:09:44.609+08:00  INFO 1388 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:09:45.216+08:00  INFO 1388 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:09:45.284+08:00  INFO 1388 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:09:45.465+08:00  INFO 1388 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:09:46.135+08:00  INFO 1388 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:09:46.139+08:00  INFO 1388 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 3.248 seconds (process running for 3.63)
+2025-06-26T11:09:49.257+08:00  INFO 1388 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T11:09:49.257+08:00  INFO 1388 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T11:09:49.258+08:00  INFO 1388 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T11:15:08.397+08:00  INFO 1388 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:15:08.399+08:00  INFO 1388 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:15:08.401+08:00  INFO 1388 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:15:08.404+08:00  INFO 1388 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:15:08.405+08:00  INFO 1388 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:15:08.406+08:00  INFO 1388 --- [oldstore] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:15:09.646+08:00  INFO 12088 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 12088 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:15:09.647+08:00  INFO 12088 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:15:09.995+08:00  INFO 12088 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:15:09.996+08:00  INFO 12088 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:15:10.017+08:00  INFO 12088 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:15:10.018+08:00  INFO 12088 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:15:10.018+08:00  INFO 12088 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:15:10.019+08:00  INFO 12088 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:15:10.020+08:00  INFO 12088 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:15:10.020+08:00  INFO 12088 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:15:10.026+08:00  INFO 12088 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:15:10.026+08:00  INFO 12088 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:15:10.046+08:00  INFO 12088 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:15:10.310+08:00  INFO 12088 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:15:10.319+08:00  INFO 12088 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:15:10.319+08:00  INFO 12088 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:15:10.444+08:00  INFO 12088 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:15:10.447+08:00  INFO 12088 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:15:10.447+08:00  INFO 12088 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 777 ms
+2025-06-26T11:15:10.527+08:00  INFO 12088 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:15:10.558+08:00  INFO 12088 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:15:10.578+08:00  INFO 12088 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:15:10.723+08:00  INFO 12088 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:15:10.740+08:00  INFO 12088 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:15:10.828+08:00  INFO 12088 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a105556
+2025-06-26T11:15:10.829+08:00  INFO 12088 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:15:10.872+08:00  INFO 12088 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:15:11.410+08:00  INFO 12088 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:15:11.465+08:00  INFO 12088 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:15:11.627+08:00  INFO 12088 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:15:12.224+08:00  INFO 12088 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:15:12.228+08:00  INFO 12088 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.787 seconds (process running for 3.09)
+2025-06-26T11:15:23.974+08:00  INFO 12088 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T11:15:23.974+08:00  INFO 12088 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T11:15:23.975+08:00  INFO 12088 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-26T11:27:57.458+08:00  INFO 12088 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:27:57.459+08:00  INFO 12088 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:27:57.462+08:00  INFO 12088 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:27:57.464+08:00  INFO 12088 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:27:57.465+08:00  INFO 12088 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:27:57.468+08:00  INFO 12088 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:27:58.680+08:00  INFO 10164 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 10164 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:27:58.681+08:00  INFO 10164 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:27:59.034+08:00  INFO 10164 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:27:59.034+08:00  INFO 10164 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:27:59.055+08:00  INFO 10164 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:27:59.057+08:00  INFO 10164 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:27:59.057+08:00  INFO 10164 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:27:59.058+08:00  INFO 10164 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:27:59.059+08:00  INFO 10164 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:27:59.060+08:00  INFO 10164 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:27:59.066+08:00  INFO 10164 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:27:59.066+08:00  INFO 10164 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:27:59.086+08:00  INFO 10164 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:27:59.347+08:00  INFO 10164 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:27:59.355+08:00  INFO 10164 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:27:59.355+08:00  INFO 10164 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:27:59.479+08:00  INFO 10164 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:27:59.483+08:00  INFO 10164 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:27:59.483+08:00  INFO 10164 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2025-06-26T11:27:59.576+08:00  INFO 10164 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:27:59.611+08:00  INFO 10164 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:27:59.632+08:00  INFO 10164 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:27:59.779+08:00  INFO 10164 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:27:59.796+08:00  INFO 10164 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:27:59.884+08:00  INFO 10164 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a72e2e8
+2025-06-26T11:27:59.885+08:00  INFO 10164 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:27:59.928+08:00  INFO 10164 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:28:00.464+08:00  INFO 10164 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:28:00.524+08:00  INFO 10164 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:28:00.677+08:00  INFO 10164 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:28:01.288+08:00  INFO 10164 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:28:01.292+08:00  INFO 10164 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.82 seconds (process running for 3.115)
+2025-06-26T11:28:03.733+08:00  INFO 10164 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T11:28:03.733+08:00  INFO 10164 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T11:28:03.734+08:00  INFO 10164 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T11:50:55.704+08:00  INFO 10164 --- [oldstore] [RMI TCP Connection(32)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:50:55.706+08:00  INFO 10164 --- [oldstore] [RMI TCP Connection(32)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:50:55.708+08:00  INFO 10164 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:50:55.710+08:00  INFO 10164 --- [oldstore] [RMI TCP Connection(32)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:50:55.712+08:00  INFO 10164 --- [oldstore] [RMI TCP Connection(32)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:50:55.715+08:00  INFO 10164 --- [oldstore] [RMI TCP Connection(32)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:50:56.964+08:00  INFO 13680 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 13680 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:50:56.965+08:00  INFO 13680 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:50:57.303+08:00  INFO 13680 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:50:57.304+08:00  INFO 13680 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:50:57.324+08:00  INFO 13680 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:50:57.325+08:00  INFO 13680 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:50:57.326+08:00  INFO 13680 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:50:57.327+08:00  INFO 13680 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:50:57.328+08:00  INFO 13680 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:50:57.328+08:00  INFO 13680 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:50:57.334+08:00  INFO 13680 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:50:57.335+08:00  INFO 13680 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:50:57.355+08:00  INFO 13680 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:50:57.613+08:00  INFO 13680 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:50:57.621+08:00  INFO 13680 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:50:57.621+08:00  INFO 13680 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:50:57.730+08:00  INFO 13680 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:50:57.734+08:00  INFO 13680 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:50:57.734+08:00  INFO 13680 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 747 ms
+2025-06-26T11:50:57.811+08:00  INFO 13680 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:50:57.842+08:00  INFO 13680 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:50:57.860+08:00  INFO 13680 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:50:57.999+08:00  INFO 13680 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:50:58.016+08:00  INFO 13680 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:50:58.101+08:00  INFO 13680 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24fef542
+2025-06-26T11:50:58.102+08:00  INFO 13680 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:50:58.144+08:00  INFO 13680 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:50:58.666+08:00  INFO 13680 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:50:58.719+08:00  INFO 13680 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:50:58.873+08:00  INFO 13680 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:50:59.458+08:00  INFO 13680 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:50:59.462+08:00  INFO 13680 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.704 seconds (process running for 2.998)
+2025-06-26T11:51:09.886+08:00  INFO 13680 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T11:51:09.886+08:00  INFO 13680 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T11:51:09.887+08:00  INFO 13680 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T11:53:32.857+08:00  INFO 13680 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:53:32.859+08:00  INFO 13680 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:53:32.861+08:00  INFO 13680 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:53:32.863+08:00  INFO 13680 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:53:32.864+08:00  INFO 13680 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:53:32.867+08:00  INFO 13680 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:53:34.096+08:00  INFO 5176 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 5176 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:53:34.098+08:00  INFO 5176 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:53:34.438+08:00  INFO 5176 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:53:34.439+08:00  INFO 5176 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:53:34.459+08:00  INFO 5176 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:34.460+08:00  INFO 5176 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:34.461+08:00  INFO 5176 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:34.462+08:00  INFO 5176 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:34.463+08:00  INFO 5176 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:34.463+08:00  INFO 5176 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:53:34.469+08:00  INFO 5176 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:53:34.469+08:00  INFO 5176 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:53:34.490+08:00  INFO 5176 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:53:34.749+08:00  INFO 5176 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:53:34.758+08:00  INFO 5176 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:53:34.758+08:00  INFO 5176 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:53:34.867+08:00  INFO 5176 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:53:34.871+08:00  INFO 5176 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:53:34.871+08:00  INFO 5176 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 752 ms
+2025-06-26T11:53:34.948+08:00  INFO 5176 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:53:34.981+08:00  INFO 5176 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:53:34.999+08:00  INFO 5176 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:53:35.138+08:00  INFO 5176 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:53:35.155+08:00  INFO 5176 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:53:35.239+08:00  INFO 5176 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42401b81
+2025-06-26T11:53:35.240+08:00  INFO 5176 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:53:35.283+08:00  INFO 5176 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:53:35.819+08:00  INFO 5176 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:53:35.878+08:00  INFO 5176 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:53:36.035+08:00  INFO 5176 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:53:36.635+08:00  INFO 5176 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:53:36.638+08:00  INFO 5176 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.76 seconds (process running for 3.055)
+2025-06-26T11:53:37.485+08:00  INFO 5176 --- [oldstore] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:53:37.486+08:00  INFO 5176 --- [oldstore] [RMI TCP Connection(8)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:53:37.489+08:00  INFO 5176 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:53:37.491+08:00  INFO 5176 --- [oldstore] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:53:37.492+08:00  INFO 5176 --- [oldstore] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:53:37.495+08:00  INFO 5176 --- [oldstore] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:53:38.707+08:00  INFO 9408 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 9408 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:53:38.709+08:00  INFO 9408 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:53:39.046+08:00  INFO 9408 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:53:39.047+08:00  INFO 9408 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:53:39.068+08:00  INFO 9408 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:39.069+08:00  INFO 9408 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:39.070+08:00  INFO 9408 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:39.071+08:00  INFO 9408 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:39.071+08:00  INFO 9408 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:39.072+08:00  INFO 9408 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:53:39.077+08:00  INFO 9408 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:53:39.078+08:00  INFO 9408 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:53:39.098+08:00  INFO 9408 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:53:39.358+08:00  INFO 9408 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:53:39.366+08:00  INFO 9408 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:53:39.366+08:00  INFO 9408 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:53:39.475+08:00  INFO 9408 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:53:39.479+08:00  INFO 9408 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:53:39.479+08:00  INFO 9408 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 751 ms
+2025-06-26T11:53:39.558+08:00  INFO 9408 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:53:39.590+08:00  INFO 9408 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:53:39.610+08:00  INFO 9408 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:53:39.751+08:00  INFO 9408 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:53:39.768+08:00  INFO 9408 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:53:39.855+08:00  INFO 9408 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f1d1463
+2025-06-26T11:53:39.856+08:00  INFO 9408 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:53:39.899+08:00  INFO 9408 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:53:40.436+08:00  INFO 9408 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:53:40.488+08:00  INFO 9408 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:53:40.642+08:00  INFO 9408 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:53:41.230+08:00  INFO 9408 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:53:41.234+08:00  INFO 9408 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.73 seconds (process running for 3.031)
+2025-06-26T11:53:44.628+08:00  INFO 9408 --- [oldstore] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:53:44.630+08:00  INFO 9408 --- [oldstore] [RMI TCP Connection(6)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:53:44.632+08:00  INFO 9408 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:53:44.634+08:00  INFO 9408 --- [oldstore] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:53:44.635+08:00  INFO 9408 --- [oldstore] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:53:44.638+08:00  INFO 9408 --- [oldstore] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:53:45.852+08:00  INFO 11348 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 11348 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:53:45.853+08:00  INFO 11348 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:53:46.195+08:00  INFO 11348 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:53:46.196+08:00  INFO 11348 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:53:46.217+08:00  INFO 11348 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:46.217+08:00  INFO 11348 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:46.218+08:00  INFO 11348 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:46.219+08:00  INFO 11348 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:46.220+08:00  INFO 11348 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:53:46.220+08:00  INFO 11348 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:53:46.226+08:00  INFO 11348 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:53:46.227+08:00  INFO 11348 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:53:46.247+08:00  INFO 11348 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:53:46.508+08:00  INFO 11348 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:53:46.517+08:00  INFO 11348 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:53:46.517+08:00  INFO 11348 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:53:46.624+08:00  INFO 11348 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:53:46.628+08:00  INFO 11348 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:53:46.628+08:00  INFO 11348 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 754 ms
+2025-06-26T11:53:46.707+08:00  INFO 11348 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:53:46.738+08:00  INFO 11348 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:53:46.756+08:00  INFO 11348 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:53:46.897+08:00  INFO 11348 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:53:46.914+08:00  INFO 11348 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:53:47.001+08:00  INFO 11348 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a72e2e8
+2025-06-26T11:53:47.002+08:00  INFO 11348 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:53:47.046+08:00  INFO 11348 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:53:47.572+08:00  INFO 11348 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:53:47.624+08:00  INFO 11348 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:53:47.777+08:00  INFO 11348 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:53:48.364+08:00  INFO 11348 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:53:48.367+08:00  INFO 11348 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.722 seconds (process running for 3.021)
+2025-06-26T11:53:51.537+08:00  INFO 11348 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T11:53:51.537+08:00  INFO 11348 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T11:53:51.538+08:00  INFO 11348 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T11:55:50.891+08:00  INFO 11348 --- [oldstore] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:55:50.893+08:00  INFO 11348 --- [oldstore] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:55:50.895+08:00  INFO 11348 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:55:50.897+08:00  INFO 11348 --- [oldstore] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:55:50.898+08:00  INFO 11348 --- [oldstore] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:55:50.901+08:00  INFO 11348 --- [oldstore] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:55:52.131+08:00  INFO 5776 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 5776 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:55:52.132+08:00  INFO 5776 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:55:52.473+08:00  INFO 5776 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:55:52.473+08:00  INFO 5776 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:55:52.495+08:00  INFO 5776 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:55:52.495+08:00  INFO 5776 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:55:52.496+08:00  INFO 5776 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:55:52.497+08:00  INFO 5776 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:55:52.498+08:00  INFO 5776 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:55:52.499+08:00  INFO 5776 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:55:52.505+08:00  INFO 5776 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:55:52.505+08:00  INFO 5776 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:55:52.526+08:00  INFO 5776 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:55:52.791+08:00  INFO 5776 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:55:52.800+08:00  INFO 5776 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:55:52.800+08:00  INFO 5776 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:55:52.911+08:00  INFO 5776 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:55:52.914+08:00  INFO 5776 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:55:52.915+08:00  INFO 5776 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2025-06-26T11:55:52.994+08:00  INFO 5776 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:55:53.026+08:00  INFO 5776 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:55:53.045+08:00  INFO 5776 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:55:53.194+08:00  INFO 5776 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:55:53.211+08:00  INFO 5776 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:55:53.296+08:00  INFO 5776 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a72e2e8
+2025-06-26T11:55:53.298+08:00  INFO 5776 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:55:53.340+08:00  INFO 5776 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:55:53.868+08:00  INFO 5776 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:55:53.923+08:00  INFO 5776 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:55:54.080+08:00  INFO 5776 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:55:54.686+08:00  INFO 5776 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:55:54.690+08:00  INFO 5776 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.766 seconds (process running for 3.073)
+2025-06-26T11:55:54.713+08:00  INFO 5776 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T11:55:54.713+08:00  INFO 5776 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T11:55:54.714+08:00  INFO 5776 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T11:58:25.990+08:00  INFO 5776 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:58:25.992+08:00  INFO 5776 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:58:25.994+08:00  INFO 5776 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:58:25.996+08:00  INFO 5776 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:58:25.997+08:00  INFO 5776 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:58:26.000+08:00  INFO 5776 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:58:27.202+08:00  INFO 7216 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 7216 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:58:27.203+08:00  INFO 7216 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:58:27.540+08:00  INFO 7216 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:58:27.542+08:00  INFO 7216 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:58:27.562+08:00  INFO 7216 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:58:27.563+08:00  INFO 7216 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:58:27.564+08:00  INFO 7216 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:58:27.564+08:00  INFO 7216 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:58:27.565+08:00  INFO 7216 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:58:27.566+08:00  INFO 7216 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:58:27.572+08:00  INFO 7216 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:58:27.572+08:00  INFO 7216 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:58:27.593+08:00  INFO 7216 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:58:27.852+08:00  INFO 7216 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:58:27.860+08:00  INFO 7216 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:58:27.860+08:00  INFO 7216 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:58:27.969+08:00  INFO 7216 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:58:27.973+08:00  INFO 7216 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:58:27.973+08:00  INFO 7216 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 749 ms
+2025-06-26T11:58:28.051+08:00  INFO 7216 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:58:28.082+08:00  INFO 7216 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:58:28.100+08:00  INFO 7216 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:58:28.244+08:00  INFO 7216 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:58:28.261+08:00  INFO 7216 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:58:28.346+08:00  INFO 7216 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24fef542
+2025-06-26T11:58:28.347+08:00  INFO 7216 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:58:28.391+08:00  INFO 7216 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:58:28.949+08:00  INFO 7216 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:58:29.010+08:00  INFO 7216 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:58:29.162+08:00  INFO 7216 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:58:29.760+08:00  INFO 7216 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:58:29.764+08:00  INFO 7216 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.768 seconds (process running for 3.063)
+2025-06-26T11:58:31.174+08:00  INFO 7216 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T11:58:31.174+08:00  INFO 7216 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T11:58:31.174+08:00  INFO 7216 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-26T11:59:23.309+08:00  INFO 7216 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T11:59:23.310+08:00  INFO 7216 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T11:59:23.313+08:00  INFO 7216 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T11:59:23.316+08:00  INFO 7216 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:59:23.317+08:00  INFO 7216 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T11:59:23.320+08:00  INFO 7216 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T11:59:24.521+08:00  INFO 8916 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 8916 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T11:59:24.522+08:00  INFO 8916 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T11:59:24.860+08:00  INFO 8916 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:59:24.861+08:00  INFO 8916 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T11:59:24.882+08:00  INFO 8916 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:59:24.883+08:00  INFO 8916 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:59:24.884+08:00  INFO 8916 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:59:24.885+08:00  INFO 8916 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:59:24.886+08:00  INFO 8916 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T11:59:24.886+08:00  INFO 8916 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T11:59:24.891+08:00  INFO 8916 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T11:59:24.892+08:00  INFO 8916 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T11:59:24.912+08:00  INFO 8916 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2025-06-26T11:59:25.170+08:00  INFO 8916 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T11:59:25.178+08:00  INFO 8916 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T11:59:25.179+08:00  INFO 8916 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T11:59:25.287+08:00  INFO 8916 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T11:59:25.291+08:00  INFO 8916 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T11:59:25.291+08:00  INFO 8916 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
+2025-06-26T11:59:25.368+08:00  INFO 8916 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T11:59:25.400+08:00  INFO 8916 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T11:59:25.418+08:00  INFO 8916 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T11:59:25.555+08:00  INFO 8916 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T11:59:25.571+08:00  INFO 8916 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T11:59:25.657+08:00  INFO 8916 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a105556
+2025-06-26T11:59:25.658+08:00  INFO 8916 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T11:59:25.700+08:00  INFO 8916 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T11:59:26.221+08:00  INFO 8916 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T11:59:26.272+08:00  INFO 8916 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T11:59:26.424+08:00  INFO 8916 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T11:59:27.001+08:00  INFO 8916 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T11:59:27.005+08:00  INFO 8916 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.689 seconds (process running for 2.983)
+2025-06-26T11:59:36.949+08:00  INFO 8916 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T11:59:36.950+08:00  INFO 8916 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T11:59:36.950+08:00  INFO 8916 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-26T12:02:41.582+08:00  INFO 8916 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T12:02:41.584+08:00  INFO 8916 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T12:02:41.586+08:00  INFO 8916 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T12:02:41.589+08:00  INFO 8916 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T12:02:41.590+08:00  INFO 8916 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T12:02:41.594+08:00  INFO 8916 --- [oldstore] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T12:02:55.346+08:00  INFO 3312 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 3312 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T12:02:55.348+08:00  INFO 3312 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T12:02:55.767+08:00  INFO 3312 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T12:02:55.768+08:00  INFO 3312 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T12:02:55.793+08:00  INFO 3312 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T12:02:55.794+08:00  INFO 3312 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T12:02:55.795+08:00  INFO 3312 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T12:02:55.796+08:00  INFO 3312 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T12:02:55.797+08:00  INFO 3312 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T12:02:55.797+08:00  INFO 3312 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2025-06-26T12:02:55.803+08:00  INFO 3312 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T12:02:55.804+08:00  INFO 3312 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T12:02:55.824+08:00  INFO 3312 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2025-06-26T12:02:56.088+08:00  INFO 3312 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T12:02:56.096+08:00  INFO 3312 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T12:02:56.097+08:00  INFO 3312 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T12:02:56.209+08:00  INFO 3312 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T12:02:56.213+08:00  INFO 3312 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T12:02:56.213+08:00  INFO 3312 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 841 ms
+2025-06-26T12:02:56.291+08:00  INFO 3312 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T12:02:56.322+08:00  INFO 3312 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T12:02:56.340+08:00  INFO 3312 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T12:02:56.486+08:00  INFO 3312 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T12:02:56.502+08:00  INFO 3312 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T12:02:56.588+08:00  INFO 3312 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a278584
+2025-06-26T12:02:56.589+08:00  INFO 3312 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T12:02:56.631+08:00  INFO 3312 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T12:02:57.318+08:00  INFO 3312 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T12:02:57.387+08:00  INFO 3312 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T12:02:57.583+08:00  INFO 3312 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T12:02:58.250+08:00  INFO 3312 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T12:02:58.254+08:00  INFO 3312 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 3.116 seconds (process running for 3.442)
+2025-06-26T12:03:13.667+08:00  INFO 3312 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T12:03:13.667+08:00  INFO 3312 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T12:03:13.668+08:00  INFO 3312 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T13:37:31.726+08:00  INFO 9032 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 9032 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T13:37:31.727+08:00  INFO 9032 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T13:37:32.126+08:00  INFO 9032 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T13:37:32.127+08:00  INFO 9032 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T13:37:32.152+08:00  INFO 9032 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:37:32.153+08:00  INFO 9032 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:37:32.154+08:00  INFO 9032 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:37:32.155+08:00  INFO 9032 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:37:32.156+08:00  INFO 9032 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:37:32.156+08:00  INFO 9032 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2025-06-26T13:37:32.164+08:00  INFO 9032 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T13:37:32.165+08:00  INFO 9032 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T13:37:32.186+08:00  INFO 9032 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T13:37:32.485+08:00  INFO 9032 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T13:37:32.494+08:00  INFO 9032 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T13:37:32.494+08:00  INFO 9032 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T13:37:32.605+08:00  INFO 9032 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T13:37:32.610+08:00  INFO 9032 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T13:37:32.610+08:00  INFO 9032 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 859 ms
+2025-06-26T13:37:32.702+08:00  INFO 9032 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T13:37:32.750+08:00  INFO 9032 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T13:37:32.774+08:00  INFO 9032 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T13:37:32.950+08:00  INFO 9032 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T13:37:32.972+08:00  INFO 9032 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T13:37:33.089+08:00  INFO 9032 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fa879ed
+2025-06-26T13:37:33.090+08:00  INFO 9032 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T13:37:33.149+08:00  INFO 9032 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T13:37:33.748+08:00  INFO 9032 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T13:37:33.820+08:00  INFO 9032 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T13:37:34.003+08:00  INFO 9032 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T13:37:34.692+08:00  INFO 9032 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T13:37:34.695+08:00  INFO 9032 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 3.218 seconds (process running for 3.586)
+2025-06-26T13:38:55.455+08:00  INFO 9032 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T13:38:55.455+08:00  INFO 9032 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T13:38:55.456+08:00  INFO 9032 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T13:39:04.395+08:00  INFO 9032 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T13:39:04.397+08:00  INFO 9032 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T13:39:04.399+08:00  INFO 9032 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T13:39:04.401+08:00  INFO 9032 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T13:39:04.402+08:00  INFO 9032 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T13:39:04.404+08:00  INFO 9032 --- [oldstore] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T13:39:05.632+08:00  INFO 1988 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 1988 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T13:39:05.633+08:00  INFO 1988 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T13:39:05.992+08:00  INFO 1988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T13:39:05.993+08:00  INFO 1988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T13:39:06.014+08:00  INFO 1988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:39:06.015+08:00  INFO 1988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:39:06.016+08:00  INFO 1988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:39:06.016+08:00  INFO 1988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:39:06.017+08:00  INFO 1988 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:39:06.018+08:00  INFO 1988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T13:39:06.024+08:00  INFO 1988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T13:39:06.024+08:00  INFO 1988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T13:39:06.045+08:00  INFO 1988 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2025-06-26T13:39:06.306+08:00  INFO 1988 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T13:39:06.314+08:00  INFO 1988 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T13:39:06.315+08:00  INFO 1988 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T13:39:06.422+08:00  INFO 1988 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T13:39:06.426+08:00  INFO 1988 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T13:39:06.426+08:00  INFO 1988 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2025-06-26T13:39:06.508+08:00  INFO 1988 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T13:39:06.541+08:00  INFO 1988 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T13:39:06.560+08:00  INFO 1988 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T13:39:06.703+08:00  INFO 1988 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T13:39:06.719+08:00  INFO 1988 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T13:39:06.806+08:00  INFO 1988 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67a6a2d0
+2025-06-26T13:39:06.807+08:00  INFO 1988 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T13:39:06.849+08:00  INFO 1988 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T13:39:07.376+08:00  INFO 1988 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T13:39:07.430+08:00  INFO 1988 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T13:39:07.583+08:00  INFO 1988 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T13:39:08.172+08:00  INFO 1988 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T13:39:08.176+08:00  INFO 1988 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.757 seconds (process running for 3.055)
+2025-06-26T13:39:09.286+08:00  INFO 1988 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T13:39:09.286+08:00  INFO 1988 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T13:39:09.287+08:00  INFO 1988 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T13:46:46.083+08:00  INFO 1988 --- [oldstore] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T13:46:46.084+08:00  INFO 1988 --- [oldstore] [RMI TCP Connection(17)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T13:46:46.086+08:00  INFO 1988 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T13:46:46.089+08:00  INFO 1988 --- [oldstore] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T13:46:46.090+08:00  INFO 1988 --- [oldstore] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T13:46:46.093+08:00  INFO 1988 --- [oldstore] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T13:46:47.308+08:00  INFO 992 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 992 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T13:46:47.309+08:00  INFO 992 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T13:46:47.653+08:00  INFO 992 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T13:46:47.653+08:00  INFO 992 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T13:46:47.673+08:00  INFO 992 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:46:47.674+08:00  INFO 992 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:46:47.675+08:00  INFO 992 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:46:47.676+08:00  INFO 992 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:46:47.677+08:00  INFO 992 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:46:47.677+08:00  INFO 992 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-06-26T13:46:47.683+08:00  INFO 992 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T13:46:47.684+08:00  INFO 992 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T13:46:47.704+08:00  INFO 992 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2025-06-26T13:46:47.961+08:00  INFO 992 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T13:46:47.969+08:00  INFO 992 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T13:46:47.969+08:00  INFO 992 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T13:46:48.080+08:00  INFO 992 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T13:46:48.084+08:00  INFO 992 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T13:46:48.084+08:00  INFO 992 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 755 ms
+2025-06-26T13:46:48.162+08:00  INFO 992 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T13:46:48.195+08:00  INFO 992 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T13:46:48.213+08:00  INFO 992 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T13:46:48.354+08:00  INFO 992 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T13:46:48.371+08:00  INFO 992 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T13:46:48.458+08:00  INFO 992 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49e0b123
+2025-06-26T13:46:48.458+08:00  INFO 992 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T13:46:48.501+08:00  INFO 992 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T13:46:49.034+08:00  INFO 992 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T13:46:49.090+08:00  INFO 992 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T13:46:49.245+08:00  INFO 992 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T13:46:49.849+08:00  INFO 992 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T13:46:49.853+08:00  INFO 992 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.75 seconds (process running for 3.045)
+2025-06-26T13:46:50.888+08:00  INFO 992 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T13:46:50.888+08:00  INFO 992 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T13:46:50.889+08:00  INFO 992 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-26T13:58:30.447+08:00  INFO 992 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T13:58:30.449+08:00  INFO 992 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T13:58:30.451+08:00  INFO 992 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T13:58:30.453+08:00  INFO 992 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T13:58:30.454+08:00  INFO 992 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T13:58:30.458+08:00  INFO 992 --- [oldstore] [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T13:58:31.690+08:00  INFO 7632 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.6 with PID 7632 (C:\Workspace\oldstore\target\classes started by NTPU in C:\Workspace\oldstore)
+2025-06-26T13:58:31.692+08:00  INFO 7632 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T13:58:32.035+08:00  INFO 7632 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T13:58:32.035+08:00  INFO 7632 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T13:58:32.056+08:00  INFO 7632 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:58:32.057+08:00  INFO 7632 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:58:32.058+08:00  INFO 7632 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:58:32.059+08:00  INFO 7632 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:58:32.060+08:00  INFO 7632 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T13:58:32.060+08:00  INFO 7632 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2025-06-26T13:58:32.066+08:00  INFO 7632 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T13:58:32.067+08:00  INFO 7632 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T13:58:32.087+08:00  INFO 7632 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2025-06-26T13:58:32.353+08:00  INFO 7632 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T13:58:32.361+08:00  INFO 7632 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T13:58:32.362+08:00  INFO 7632 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T13:58:32.469+08:00  INFO 7632 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T13:58:32.473+08:00  INFO 7632 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T13:58:32.473+08:00  INFO 7632 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 761 ms
+2025-06-26T13:58:32.551+08:00  INFO 7632 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T13:58:32.585+08:00  INFO 7632 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T13:58:32.603+08:00  INFO 7632 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T13:58:32.747+08:00  INFO 7632 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T13:58:32.764+08:00  INFO 7632 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T13:58:32.851+08:00  INFO 7632 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42401b81
+2025-06-26T13:58:32.852+08:00  INFO 7632 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T13:58:32.896+08:00  INFO 7632 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-26T13:58:33.426+08:00  INFO 7632 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T13:58:33.482+08:00  INFO 7632 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T13:58:33.636+08:00  INFO 7632 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T13:58:34.234+08:00  INFO 7632 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T13:58:34.238+08:00  INFO 7632 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 2.754 seconds (process running for 3.058)
+2025-06-26T13:58:48.189+08:00  INFO 7632 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T13:58:48.190+08:00  INFO 7632 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T13:58:48.190+08:00  INFO 7632 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-26T16:15:34.466+08:00  INFO 7632 --- [oldstore] [RMI TCP Connection(145)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T16:15:34.468+08:00  INFO 7632 --- [oldstore] [RMI TCP Connection(145)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T16:15:34.470+08:00  INFO 7632 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T16:15:34.472+08:00  INFO 7632 --- [oldstore] [RMI TCP Connection(145)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T16:15:34.473+08:00  INFO 7632 --- [oldstore] [RMI TCP Connection(145)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T16:15:34.474+08:00  INFO 7632 --- [oldstore] [RMI TCP Connection(145)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T20:46:24.851+08:00  INFO 14492 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.7 with PID 14492 (C:\WorkSpace\oldstore\target\classes started by User in C:\WorkSpace\oldstore)
+2025-06-26T20:46:24.852+08:00  INFO 14492 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T20:46:25.269+08:00  INFO 14492 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T20:46:25.270+08:00  INFO 14492 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T20:46:25.304+08:00  INFO 14492 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:46:25.305+08:00  INFO 14492 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:46:25.307+08:00  INFO 14492 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:46:25.308+08:00  INFO 14492 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:46:25.309+08:00  INFO 14492 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:46:25.311+08:00  INFO 14492 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2025-06-26T20:46:25.319+08:00  INFO 14492 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T20:46:25.320+08:00  INFO 14492 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T20:46:25.346+08:00  INFO 14492 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2025-06-26T20:46:25.707+08:00  INFO 14492 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T20:46:25.719+08:00  INFO 14492 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T20:46:25.719+08:00  INFO 14492 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T20:46:25.864+08:00  INFO 14492 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T20:46:25.868+08:00  INFO 14492 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T20:46:25.869+08:00  INFO 14492 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
+2025-06-26T20:46:25.981+08:00  INFO 14492 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T20:46:26.037+08:00  INFO 14492 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T20:46:26.064+08:00  INFO 14492 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T20:46:26.316+08:00  INFO 14492 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T20:46:26.340+08:00  INFO 14492 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T20:46:26.454+08:00  INFO 14492 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6697f3d
+2025-06-26T20:46:26.457+08:00  INFO 14492 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T20:46:26.521+08:00  INFO 14492 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.34
@@ -38,41 +926,47 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-06-21T17:39:55.111+08:00  INFO 2108 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-21T17:39:55.200+08:00  INFO 2108 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-21T17:39:55.436+08:00  INFO 2108 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-06-21T17:39:56.374+08:00  INFO 2108 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-06-21T17:39:56.380+08:00  INFO 2108 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 4.903 seconds (process running for 5.415)
-2025-06-21T17:39:57.505+08:00  INFO 2108 --- [oldstore] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-21T17:39:57.505+08:00  INFO 2108 --- [oldstore] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-21T17:39:57.506+08:00  INFO 2108 --- [oldstore] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-21T23:33:58.277+08:00  INFO 14860 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.7 with PID 14860 (C:\WorkSpace\oldstore\target\classes started by User in C:\WorkSpace\oldstore)
-2025-06-21T23:33:58.279+08:00  INFO 14860 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-06-21T23:33:58.795+08:00  INFO 14860 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-21T23:33:58.796+08:00  INFO 14860 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-06-21T23:33:58.827+08:00  INFO 14860 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T23:33:58.829+08:00  INFO 14860 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T23:33:58.830+08:00  INFO 14860 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T23:33:58.832+08:00  INFO 14860 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T23:33:58.834+08:00  INFO 14860 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2025-06-21T23:33:58.834+08:00  INFO 14860 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 JDBC repository interfaces.
-2025-06-21T23:33:58.842+08:00  INFO 14860 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-21T23:33:58.844+08:00  INFO 14860 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-21T23:33:58.884+08:00  INFO 14860 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
-2025-06-21T23:33:59.285+08:00  INFO 14860 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-21T23:33:59.302+08:00  INFO 14860 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-21T23:33:59.303+08:00  INFO 14860 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-06-21T23:33:59.456+08:00  INFO 14860 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2025-06-21T23:33:59.462+08:00  INFO 14860 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-21T23:33:59.463+08:00  INFO 14860 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1154 ms
-2025-06-21T23:33:59.561+08:00  INFO 14860 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-21T23:33:59.600+08:00  INFO 14860 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-06-21T23:33:59.620+08:00  INFO 14860 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-21T23:33:59.785+08:00  INFO 14860 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-21T23:33:59.806+08:00  INFO 14860 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-21T23:33:59.904+08:00  INFO 14860 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a4ff5ed
-2025-06-21T23:33:59.905+08:00  INFO 14860 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-21T23:33:59.954+08:00  INFO 14860 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-26T20:46:27.252+08:00  INFO 14492 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T20:46:27.338+08:00  INFO 14492 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T20:46:27.534+08:00  INFO 14492 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T20:46:28.372+08:00  INFO 14492 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T20:46:28.377+08:00  INFO 14492 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 3.798 seconds (process running for 4.208)
+2025-06-26T20:46:29.653+08:00  INFO 14492 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T20:46:29.654+08:00  INFO 14492 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T20:46:29.656+08:00  INFO 14492 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-26T20:49:14.517+08:00  INFO 14492 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-26T20:49:14.518+08:00  INFO 14492 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-26T20:49:14.522+08:00  INFO 14492 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-26T20:49:14.525+08:00  INFO 14492 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T20:49:14.527+08:00  INFO 14492 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-26T20:49:14.531+08:00  INFO 14492 --- [oldstore] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T20:49:16.014+08:00  INFO 15656 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Starting OldstoreApplication using Java 21.0.7 with PID 15656 (C:\WorkSpace\oldstore\target\classes started by User in C:\WorkSpace\oldstore)
+2025-06-26T20:49:16.016+08:00  INFO 15656 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-26T20:49:16.432+08:00  INFO 15656 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T20:49:16.432+08:00  INFO 15656 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-26T20:49:16.457+08:00  INFO 15656 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.CartItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:49:16.458+08:00  INFO 15656 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderItemRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:49:16.459+08:00  INFO 15656 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:49:16.460+08:00  INFO 15656 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:49:16.460+08:00  INFO 15656 --- [oldstore] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.oldstore.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-06-26T20:49:16.460+08:00  INFO 15656 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2025-06-26T20:49:16.468+08:00  INFO 15656 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-26T20:49:16.469+08:00  INFO 15656 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-26T20:49:16.500+08:00  INFO 15656 --- [oldstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
+2025-06-26T20:49:16.807+08:00  INFO 15656 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-26T20:49:16.817+08:00  INFO 15656 --- [oldstore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-26T20:49:16.817+08:00  INFO 15656 --- [oldstore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-26T20:49:16.955+08:00  INFO 15656 --- [oldstore] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26T20:49:16.960+08:00  INFO 15656 --- [oldstore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-26T20:49:16.961+08:00  INFO 15656 --- [oldstore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 919 ms
+2025-06-26T20:49:17.055+08:00  INFO 15656 --- [oldstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-26T20:49:17.093+08:00  INFO 15656 --- [oldstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-26T20:49:17.113+08:00  INFO 15656 --- [oldstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-26T20:49:17.275+08:00  INFO 15656 --- [oldstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-26T20:49:17.294+08:00  INFO 15656 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-26T20:49:17.393+08:00  INFO 15656 --- [oldstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6654ca0d
+2025-06-26T20:49:17.394+08:00  INFO 15656 --- [oldstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-26T20:49:17.447+08:00  INFO 15656 --- [oldstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.34
@@ -80,17 +974,11 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-06-21T23:34:00.590+08:00  INFO 14860 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-21T23:34:00.723+08:00  INFO 14860 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-21T23:34:00.973+08:00  INFO 14860 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-06-21T23:34:01.847+08:00  INFO 14860 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-06-21T23:34:01.852+08:00  INFO 14860 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 3.849 seconds (process running for 4.225)
-2025-06-21T23:34:05.079+08:00  INFO 14860 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-21T23:34:05.079+08:00  INFO 14860 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-21T23:34:05.080+08:00  INFO 14860 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-21T23:34:30.035+08:00  INFO 14860 --- [oldstore] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-06-21T23:34:30.036+08:00  INFO 14860 --- [oldstore] [RMI TCP Connection(9)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-21T23:34:30.042+08:00  INFO 14860 --- [oldstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-21T23:34:30.045+08:00  INFO 14860 --- [oldstore] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-21T23:34:30.046+08:00  INFO 14860 --- [oldstore] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-21T23:34:30.052+08:00  INFO 14860 --- [oldstore] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-26T20:49:18.069+08:00  INFO 15656 --- [oldstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-26T20:49:18.219+08:00  INFO 15656 --- [oldstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-26T20:49:18.400+08:00  INFO 15656 --- [oldstore] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-26T20:49:19.073+08:00  INFO 15656 --- [oldstore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-26T20:49:19.078+08:00  INFO 15656 --- [oldstore] [main] c.example.oldstore.OldstoreApplication   : Started OldstoreApplication in 3.33 seconds (process running for 3.717)
+2025-06-26T20:49:23.259+08:00  INFO 15656 --- [oldstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26T20:49:23.259+08:00  INFO 15656 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-26T20:49:23.261+08:00  INFO 15656 --- [oldstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
