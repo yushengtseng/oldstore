@@ -13,8 +13,8 @@
     }
 
     .home-wrapper {
-   		background-color: #e0cdb4;
-        min-height: 89vh;
+        background-color: #e0cdb4;
+        min-height: 85vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,27 +23,28 @@
         padding: 2rem;
     }
 
-    h1 {
-        font-size: 3.5rem;
+    .title {
+        font-size: 5.2rem;
         font-weight: 700;
-        margin-bottom: 1rem;
-        color: #5a4033;
+        color: #4b3621;
+        margin-bottom: 0.8rem;
+        letter-spacing: 2px;
     }
 
-    p.lead {
-        font-size: 1.5rem;
-        color: #6b4c3b;
-        margin-bottom: 2rem;
+    .slogan {
+        font-size: 1.8rem;
+        color: #5e4634;
+        margin-bottom: 2.5rem;
     }
 
     .btn-home {
-        font-size: 1.2rem;
-        padding: 0.75rem 2rem;
-        border-radius: 50px;
+        font-size: 1.1rem;
+        padding: 0.6rem 1.8rem;
+        border-radius: 30px;
         background-color: #e2b77e;
         color: #2d1b00;
         border: none;
-        margin: 0 10px;
+        text-decoration: none;
         transition: all 0.3s ease-in-out;
     }
 
@@ -54,19 +55,7 @@
 </style>
 
 <div class="home-wrapper">
-    <h1>歡迎光臨 老式美好舊貨店</h1>
-    <p class="lead">在這裡，每一件舊貨都有它的故事。</p>
-
-    <div>
-        <a href="${pageContext.request.contextPath}/shop/products" class="btn btn-home">商品列表</a>
-        <a href="${pageContext.request.contextPath}/cart" class="btn btn-home">購物車</a>
-        <a href="${pageContext.request.contextPath}/member/info" class="btn btn-home">會員資訊</a>
-        <a href="${pageContext.request.contextPath}/order/history" class="btn btn-home">訂單資訊</a>
-    </div>
-    
-    <c:if test="${not empty error}">
-    	<div class="alert alert-danger mt-3 text-center">${error}</div>
-    	<c:remove var="error" scope="session"/>
-	</c:if>
-    
+    <h1 class="title">老式美好舊貨店</h1>
+    <p class="slogan">拾起舊物的記憶，在這裡與時光相遇。</p>
+    <a href="${pageContext.request.contextPath}/shop/products" class="btn btn-home">開始探索</a>
 </div>
